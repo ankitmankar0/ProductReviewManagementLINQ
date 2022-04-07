@@ -48,7 +48,6 @@ namespace ProductReviewManagementLINQ
 
         }
 
-
         /* Class Program*/
         public static void CreateDataTable() //create method
         {
@@ -69,7 +68,7 @@ namespace ProductReviewManagementLINQ
             var Productname = from product in table.AsEnumerable() select product.Field<string>("ProductName"); //Fetch Products of the table
             foreach (var item in Productname) //Iterate 
             {
-                Console.WriteLine($"ProductName:- {item}"); //print 
+                Console.WriteLine($"ProductName:- {item}"); 
             }
         }
     }
