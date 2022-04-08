@@ -48,7 +48,6 @@ namespace ProductReviewManagementLINQ
 
         }
 
-
         /* Class Program*/
         public static void CreateDataTable() //create method
         {
