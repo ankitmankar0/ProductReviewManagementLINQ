@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Linq;
 
 namespace ProductReviewManagementLINQ
 {
@@ -19,6 +20,23 @@ namespace ProductReviewManagementLINQ
             {
                 Console.WriteLine("ProductId:-" + list.ProductId + "  " + "UserId:-" + list.UserId + "  " + "Rating:-" + list.Rating
                     + "  " + "Review:-" + list.Review + "  " + "IsLike:-" + list.isLike); //Print data
+            }
+        }
+
+        /*UC3:- Product Review Management.
+                - Retrieve all record from the list who’s rating are greater than 3 and 
+                productID is 1 or 4 or 9 using LINQ.
+        */
+        public static void RetrieveRecordsWithGreaterThanThreeRating(List<ProductReview> productReviewlist)
+        {           //Query syntax for LINQ 
+            var RecordedData = (from productReviews in productReviewlist
+                                where (productReviews.ProductId == 1 || productReviews.ProductId == 4 || productReviews.ProductId == 9)
+                                && productReviews.Rating > 3
+                                select productReviews);
+            Console.WriteLine("\nProducts with Rating Greater than 3 and productID = 1 or 4 or 9 are:- ");
+            foreach (var List in RecordedData)
+            {
+                Console.WriteLine($"ProductId:- {List.ProductId}   || UserId:- {List.UserId}   || Rating:- {List.Rating}   || Review:- {List.Review }   ||   IsLike:- {List.isLike }"); //Print data
             }
         }
     }

@@ -44,8 +44,10 @@ namespace ProductReviewManagementLINQ
             Management management = new Management();  //Creating Object of Management class
 
             //UC1
-            management.IterateProductReview(productReviewlist);
+            //management.IterateProductReview(productReviewlist);
 
+            //UC3
+            Management.RetrieveRecordsWithGreaterThanThreeRating(productReviewlist);
         }
 
         /* Class Program*/
