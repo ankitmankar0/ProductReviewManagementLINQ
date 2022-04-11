@@ -72,7 +72,10 @@ namespace ProductReviewManagementLINQ
             //Management.FindAverageRatingOfTheEachProductId();
 
             //UC11
-            Management.RetrieveRecordsWithReviewContainsNice();
+            //Management.RetrieveRecordsWithReviewContainsNice();
+
+            //UC12
+            Management.RetrieveRecordsForGivenUserIdOrderByRating();
         }
 
 
