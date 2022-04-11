@@ -50,8 +50,13 @@ namespace ProductReviewManagementLINQ
             //Management.RetrieveRecordsWithGreaterThanThreeRating(productReviewlist);
 
             //UC4
-            Management.RetrieveCountOfReviewForEachProductId(productReviewlist);
+            //Management.RetrieveCountOfReviewForEachProductId(productReviewlist);
+
+            //UC5
+            Management.RetrieveProductIDAndReviewOfAllRecords(productReviewlist);
+
         }
+
 
         /* Class Program*/
         public static void CreateDataTable() //create method
