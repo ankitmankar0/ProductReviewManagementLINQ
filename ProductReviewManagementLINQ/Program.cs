@@ -56,7 +56,10 @@ namespace ProductReviewManagementLINQ
             //Management.RetrieveProductIDAndReviewOfAllRecords(productReviewlist);
             
             //UC6
-            Management.SkipTopFiveRecords(productReviewlist);
+            //Management.SkipTopFiveRecords(productReviewlist);
+
+            //UC7
+            Management.RetrieveProductIDAndReviewUsingLambdaSyntax(productReviewlist);
         }
 
 
