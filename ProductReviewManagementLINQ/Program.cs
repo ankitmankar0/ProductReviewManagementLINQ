@@ -65,7 +65,11 @@ namespace ProductReviewManagementLINQ
             //Management.CreateDataTable();
 
             //UC9
-            Management.RetrieveRecordWithTrueIsLike();
+            //Management.RetrieveRecordWithTrueIsLike();
+
+
+            //UC10
+            Management.FindAverageRatingOfTheEachProductId();
         }
 
 
