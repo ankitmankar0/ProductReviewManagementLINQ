@@ -62,7 +62,10 @@ namespace ProductReviewManagementLINQ
             //Management.RetrieveProductIDAndReviewUsingLambdaSyntax(productReviewlist);
 
             //UC8
-            Management.CreateDataTable();
+            //Management.CreateDataTable();
+
+            //UC9
+            Management.RetrieveRecordWithTrueIsLike();
         }
 
 
